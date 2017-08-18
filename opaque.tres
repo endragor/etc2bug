@@ -1,0 +1,14 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+
+code = "shader_type spatial;
+render_mode blend_mix,depth_draw_always,cull_back,unshaded;
+
+uniform sampler2D main_texture: hint_albedo;
+
+void fragment() {
+	ALBEDO = texture(main_texture, UV).rgb;
+}"
+_sections_unfolded = [ "Resource" ]
+
