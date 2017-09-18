@@ -11,8 +11,19 @@ config_version=3
 [application]
 
 config/name="etc2bug"
-run/main_scene="res://main.tscn"
+run/main_scene="res://main2d.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep_width"
+
+[gdnative]
+
+singletons=[  ]
 
 [rendering]
 
